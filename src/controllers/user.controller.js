@@ -7,3 +7,10 @@ module.exports.register = ({body}, res) => {
         users
     });
 }
+
+module.exports.list = (_req, res) => {
+    res.send({
+        msg: 'Users',
+        users
+    });
+}
